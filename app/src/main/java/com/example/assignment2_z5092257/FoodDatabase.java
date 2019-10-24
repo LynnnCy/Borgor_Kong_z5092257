@@ -31,139 +31,156 @@ public class FoodDatabase {
 
         food.put(1, new Food(
                 1,
-                "Kong Burger",
-                "Beef Pattie, Cheese, Lettuce, Pickles, Vegemitte Mayo and Fries",
+                "Single Pretzel Bacon KING",
+                "100% Beef Pattie, Smokey bacon, Cheese,Creamy Mayo.",
                 18.20,
-                "After meddling in the 2016 American election, Russia is using similar tactics in the Central African Republic. But as it sows political chaos, this time it is also seeking diamonds."
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food1
 
         ));
         food.put(2, new Food(
                 2,
-                "Cheese Burger",
-                "Beef Pattie, Double Cheese, Pickles, Onions, Ketchup, Mustard and Fries",
+                "Double Pretzel Bacon KING",
+                "100% Beef Pattie, Smokey bacon, Cheese,Creamy Mayo",
                 20.50,
-                "In a race where many voters are following politics online, Mr. Biden’s pullback is a striking and potentially worrisome sign about his appeal among the digitally active."
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food2
 
         ));
 
         food.put(3, new Food(
                 3,
-                "Chicken Burger",
-                "Buttermilk Fried Chicken, Cheese, Pickles, Slaw, Cajun Mayo and Fries",
+                "Impossible Whopper",
+                "juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles",
                 21.50,
-                "PARIS — World leaders and dignitaries gathered in Paris on Monday as France marked a national day of mourning for Jacques Chirac, the former French president who died last week."
+                "Allergens: Egg, Soy and Wheat.",
+                R.drawable.food3
 
         ));
 
         food.put(4, new Food(
                 4,
-                "Chicken Burger",
-                "Neil Vigdor",
-                21.50,
-                "The escapees had help from at least one individual on the outside, the authorities said."
+                "Triple Stacker KING",
+                " flame-grilled 100% beef, topped with smoky bacon, melted American cheese.",
+                22.50,
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food4
 
         ));
 
         food.put(5, new Food(
                 5,
-                "Mushroom Burger",
-                "Field Mushroom, Lettuce, Onion Rings, Aioli and Fries",
+                "Double Stacker KING",
+                " flame-grilled 100% beef, topped with smoky bacon, melted American cheese",
                 20.50,
-                "Inspired by her own journey to the Arctic Circle, Himali Singh Soin upends traditional stories of exploration in her new commission for Frieze."
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food5
                 ));
+
         food.put(6, new Food(
                         6,
-                        "B.W.A",
-                        "Double Beef, Double Cheese, Steaky Bacon, Onion Rings, Hot Sauce and Fries",
-                        24.50,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                        "Single Stacker KING",
+                        "flame-grilled 100% beef, topped with smoky bacon, melted American cheese",
+                        18.50,
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food6
 
                         ));
         food.put(7, new Food(
                 7,
-                "Big Pun",
-                "Buttermilk Fried Chicken, Melted Cheese, Poutine Waffle Fries, Maple Bacon, Maple Mayo, Jalapenos with Fries",
-                18.00,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Double Quarter Pound KING",
+                "flame-grilled 100% beef, topped with American cheese, freshly sliced onions, zesty pickles, ketchup.",
+                20.00,
+                "Allergens: Milk, Soy and Wheat.",
+                R.drawable.food7
 
         ));
 
         food.put(8, new Food(
                 8,
-                "Original Chicken Wings",
-                "Eight pieces of original flavoured fried chicken wings",
-                16.90,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Bacon KING",
+                "Two flame–grilled 100% beef patties topped with thick-cut smoked bacon, melted American cheese, ketchup and creamy may",
+                20.90,
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food8
 
         ));
 
         food.put(9, new Food(
-                9, "Chicken Soy Wings",
-                "Eight pieces of Sweet Soy Flavoured Fried chicken wings",
+                9, "Whopper",
+                "flame-grilled beef topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles. ",
                 16.90,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Allergens: Egg, Soy and Wheat.",
+                R.drawable.food9
 
         ));
         food.put(10, new Food(
                 10,
-                "Shoestring Fries",
-                " ",
-                5.90,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Quarter Pound KING",
+                " flame-grilled 100% beef topped with American cheese, freshly sliced onions, zesty pickles, ketchup ",
+                20.90,
+                "Allergens: Milk, Soy and Wheat.",
+                R.drawable.food10
 
         ));
 
         food.put(11, new Food(
                 11,
-                "Tater Tots",
-                " ",
-                6.90,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "BBQ Bacon Whopper",
+                "fire-grilled beef, topped with thick-cut smoked bacon, melted American cheese, freshly cut iceberg lettuce, creamy mayo. ",
+                18.90,
+                "Allergens: Egg, Milk, Soy and Wheat.",
+                R.drawable.food10
 
         ));
 
         food.put(12, new Food(
                 12,
-                "Sweet Potato Wedges",
-                "Sweet Potato Wedges Served w Aioli",
-                9.90,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Double Whopper ",
+                "flame-grilled beef patties topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup.",
+                22.90,
+                "Allergens: Egg, Soy and Wheat.",
+                R.drawable.food12
 
         ));
 
         food.put(13, new Food(
                 13,
-                "Street Salad",
-                "Mixed Slaw, Fried Haloumi Cheese, Fresh Herbs, Tomato/Corn Salsa, House Dressing.",
-                12.00,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Whopper JR",
+                " flame-grilled beef patty topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles.",
+                20.00,
+                "Allergens: Egg, Soy and Wheat.",
+                R.drawable.food13
 
         ));
 
         food.put(14, new Food(
                 14,
-                "Kid's Burger Meal",
-                "Beef Pattie, Cheese, Ketchup Served w/ Fries and Apple Juice.",
-                16.50,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Bacon & Cheese Whopper",
+                " flame-grilled beef topped with thick-cut smoked bacon, melted American cheese, ripe tomatoes, fresh lettuce, creamy mayonnaise.",
+                22.50,
+                "Allergens: Egg, Soy and Wheat.",
+                R.drawable.food14
 
         ));
 
         food.put(15, new Food(
                 15,
-                "Kid's Wings Meal",
-                "Three original fried chicken wings served with fries and Apple Juice.",
+                "Hamburger",
+                "beef patty topped with a simple layer of crinkle cut pickles, yellow mustard, and ketchup.",
                 16.50,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Allergens: Soy and Wheat.",
+                R.drawable.food15
 
         ));
 
         food.put(16, new Food(
                 16,
-                "Frozen Coke",
-                " ",
-                3.50,
-                "With happiness harder to come by these days, people are grasping at any moment of joy they can get."
+                "Cheeseburger",
+                "beef patty topped with a simple layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup.",
+                16.50,
+                "Allergens: Milk, Soy and Wheat",
+                R.drawable.food16
 
         ));
 

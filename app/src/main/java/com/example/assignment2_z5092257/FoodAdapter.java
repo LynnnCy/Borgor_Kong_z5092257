@@ -29,7 +29,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.UserViewHolder
         public TextView fooddes;
         public TextView costs;
         public ImageView foodimage;
-        public BottomNavigationView vieworder;
+
 
 
         public UserViewHolder(View itemView) {
@@ -39,7 +39,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.UserViewHolder
             fooddes = itemView.findViewById(R.id.food_shortd);
             costs = itemView.findViewById(R.id.item_cost);
             foodimage = itemView.findViewById(R.id.food_image);
-            vieworder = itemView.findViewById(R.id.bottomMenu);
+
 
         }
     }
@@ -56,32 +56,24 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.UserViewHolder
 
     @Override
     public void onBindViewHolder(final UserViewHolder holder, final int position) {
-        final Food foodAtPosition= foodList.get(position);
+        final Food foodAtPosition = foodList.get(position);
 
         holder.fooddes.setText(foodList.get(position).getSummary());
-        holder.costs.setText("$"+(foodList.get(position).getCosts()));
+        holder.costs.setText("$" + (foodList.get(position).getCosts()));
 
         holder.foodname.setText(foodList.get(position).getFoodname());
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext().getApplicationContext(),FoodDetailActivity.class);
+                Intent intent = new Intent(view.getContext().getApplicationContext(), FoodDetailActivity.class);
                 intent.putExtra("FoodID", foodAtPosition.getfoodID());
                 view.getContext().startActivity(intent);
             }
         });
 
         holder.foodimage.setImageResource(foodAtPosition.getImageDrawableId());
-        holder.vieworder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(view.getContext().getApplicationContext(),OrderList.class);
-                view.getContext().startActivity(intent);
-
-            }
-        });
-        }
+    }
 
     @Override
     public int getItemCount() {

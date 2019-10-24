@@ -9,54 +9,62 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.UserViewHolder> {
-    private ArrayList<Food> orderList;
+public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHolder> {
+    private ArrayList<int[]> orderList;
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    //public void setData(ArrayList<Food> food) {
-       // this.foodList = food;
-   // }
+    public void setData(ArrayList<int[]> food) {
+       this.orderList = food;
+    }
 
-    public static class UserViewHolder extends RecyclerView.ViewHolder {
+    public static class OrderViewHolder extends RecyclerView.ViewHolder {
         public View view;
         public TextView orderFoodname;
         public TextView costs;
         public TextView orderQuantity;
         public TextView subTotal;
+        public TextView total;
 
 
-
-        public UserViewHolder(View itemView) {
+        public OrderViewHolder(View itemView) {
             super(itemView);
             view = itemView;
             orderFoodname = itemView.findViewById(R.id.order_foodName);
             costs = itemView.findViewById(R.id.order_itemCosts);
             orderQuantity = itemView.findViewById(R.id.order_quantity);
             subTotal=itemView.findViewById(R.id.order_subTotal);
+            total=itemView.findViewById(R.id.order_total);
         }
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public UserViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public OrderViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.order_item, parent, false);
-        UserViewHolder userViewHolder = new OrderAdapter.UserViewHolder(view);
+        OrderViewHolder OrderViewHolder = new OrderViewHolder(view);
 
-        return userViewHolder;
+        return OrderViewHolder;
+
     }
 
     @Override
-    public void onBindViewHolder(final UserViewHolder holder, final int position) {
-        holder.orderFoodname.setText("Name");
-        holder.costs.setText("$");
-        holder.orderQuantity.setText("17.99");
-        holder.subTotal.setText("17.99");
+    public void onBindViewHolder(final OrderViewHolder holder, final int position) {
+        int[] foodOrder = orderList.get(position);
+        Food food = FoodDatabase.getFoodById(foodOrder[0]);
+        int quantity = foodOrder[1];
+
+        holder.orderFoodname.setText(food.getFoodname());
+        holder.costs.setText("$" + food.getCosts());
+        holder.orderQuantity.setText("x " +String.valueOf(quantity));
+        holder.subTotal.setText("Subtotal: $" + String.valueOf(Math.round((food.getCosts() *quantity)*100.0)/100.0));
+
+
     }
 
     public int getItemCount(){
-        return 0;
+        return orderList.size();
 
     }
 

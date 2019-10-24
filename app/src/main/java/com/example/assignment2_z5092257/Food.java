@@ -11,19 +11,20 @@ public class Food {
     // Short text to be displayed on main page
     private String summary;
     // Full text of the article
-    private String description;
+    private String allergens;
     // Resource ID of associated image (e.g. R.drawable.my_image)
     private int imageDrawableId;
 
     private double costs;
 
 
-    public Food (int foodID, String foodname, String summary, double costs,String description) {
+    public Food (int foodID, String foodname, String summary, double costs,String allergens, int imageDrawableId) {
         this.foodID = foodID;
         this.foodname = foodname;
         this.summary = summary;
-        this.description = description;
+        this.allergens = allergens;
         this.costs=costs;
+        this.imageDrawableId=imageDrawableId;
     }
 
     public int getfoodID() {
@@ -51,12 +52,16 @@ public class Food {
         this.summary = summary;
     }
 
-    public String getDescription() {
-        return description;
+    public String getAllergens() {
+        return allergens;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAllergens(String allergens) {
+        this.allergens = allergens;
+    }
+
+    public int getFoodID() {
+        return foodID;
     }
 
     public int getImageDrawableId() {
